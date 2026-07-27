@@ -6,7 +6,7 @@ def load_file(path):
         return f.read()
 
 def main():
-    workspace_dir = "/Users/tomerkot/Portfolio site"
+    workspace_dir = "/Users/tomerkot/Portfolio site/public"
     index_path = os.path.join(workspace_dir, "index.html")
     trans_path = os.path.join(workspace_dir, "translations.js")
     css_path = os.path.join(workspace_dir, "styles.css")
