@@ -39,26 +39,34 @@ const translations = {
     "exp-role1-bullet2": "Managed virtualization and remote tools (Proxmox, VMware Horizon, vSphere, VMware).",
     "exp-role1-bullet3": "Configured VPNs, firewalls, VLANs, routing, switching, and group policies (GPOs). Managed backup, recovery, and hardware maintenance.",
 
-    "exp-role2-title": "Acting Team Leader SOC / Senior SOC Analyst",
+    "exp-role2-title": "Acting Team Lead SOC / Senior SOC Analyst",
     "exp-role2-company": "JSC 'Ukrtelecom' - Kyiv, Ukraine",
     "exp-role2-date": "07/2023 – 11/2025",
-    "exp-role2-bullet1": "Acting Team Leader: Managed a shift of 6 SOC/NOC analysts. Maintained 96% SLA compliance for critical incidents (P1/P2) on national infrastructure.",
+    "exp-role2-bullet1": "Acting Monitoring Team Lead: Managed a shift of 6 SOC/NOC analysts. Maintained 96% SLA compliance for critical incidents (P1/P2) on national infrastructure.",
     "exp-role2-bullet2": "Senior SOC Analyst: Developed and implemented 12+ custom SIEM detection use cases (MS Sentinel, Arcsight), reducing false positives by 28%.",
-    "exp-role2-bullet3": "SOC Analyst: Monitored 80+ daily alerts. Completely refactored 15 playbooks, reducing Mean Time to Respond (MTTR) by 56%.",
+    "exp-role2-bullet3": "SOC Analyst: Monitored 80+ daily alerts. Completely refactored 15 playbooks, reducing Mean Time to Respond (MTTR) by 56% (7 minutes).",
 
     // Education Section
     "edu-heading": "Education",
-    "edu-degree": "Master of Science in Cybersecurity",
+    "edu-degree": "Master's Degree in Cybersecurity",
     "edu-school": "State University of Trade and Economics",
     "edu-date": "09/2020 – 12/2025",
     "edu-thesis": "Thesis: 'Cyber Threat Detection System in Commercial Enterprise Infrastructure' (Focus on OSINT, network traffic analysis, and penetration testing).",
 
     // Certifications Section
-    "cert-heading": "Certifications",
+    "cert-heading": "Certifications & Licenses",
     "cert-item1": "Cisco Cyber Threat Management (April 2026)",
     "cert-item2": "Cisco Certified Network Associate Security (CCNA Security)",
-    "cert-item3": "ISMS Auditor ISO/IEC 27001 (ESKA / Ukrtelecom)",
+    "cert-item3": "ISMS Organization ISO/IEC 27001 (ESKA / JSC 'Ukrtelecom')",
     "cert-item4": "Cybersecurity Essentials",
+
+    // Languages Block
+    "lang-heading": "Languages",
+    "lang-ua": "Ukrainian",
+    "lang-ua-level": "Native",
+    "lang-en": "English",
+    "lang-de": "German",
+    "lang-de-level": "A2 / B2 (In training)",
 
     // Projects Section
     "projects-heading": "Featured Projects",
@@ -141,23 +149,31 @@ const translations = {
     "exp-role2-title": "Т.в.о. керівника команди SOC / Старший аналітик SOC",
     "exp-role2-company": "АТ 'Укртелеком' - Київ, Україна",
     "exp-role2-date": "07/2023 – 11/2025",
-    "exp-role2-bullet1": "Т.в.о. керівника команди: Управління зміною з 6 аналітиків SOC/NOC. Забезпечення 96% відповідності SLA для критичних інцидентів (P1/P2) у національній інфраструктурі.",
-    "exp-role2-bullet2": "Старший аналітик SOC: Розробка та впровадження 12+ нових сценаріїв виявлення загроз (Use Cases) в SIEM (MS Sentinel, Arcsight), зменшення хибнопозитивних спрацьовувань на 28%.",
-    "exp-role2-bullet3": "Аналітик SOC: Моніторинг 80+ щоденних сповіщень. Повна переробка 15 плейбуків, що скоротило середній час реагування (MTTR) на 56%.",
+    "exp-role2-bullet1": "Т.в.о. керівника групи моніторингу: Керував зміною з 6 аналітиків SOC та NOC. Забезпечив дотримання SLA на рівні 96% при обробці критичних інцидентів (P1/P2) в інфраструктурі національного масштабу.",
+    "exp-role2-bullet2": "Старший спеціаліст SOC: Розробив та впровадив понад 12 нових сценаріїв виявлення загроз (use cases) у SIEM. Завдяки оптимізації процесів тріажу зменшив кількість хибних спрацьовувань (false positives) на 28%.",
+    "exp-role2-bullet3": "Спеціаліст SOC: Щоденно аналізував понад 80 сповіщень безпеки (alerts). Повністю переписав і стандартизував 15 інструкцій (playbooks), що дозволило скоротити середній час реакції на інциденти (MTTR) на 56% (до 7 хвилин).",
 
     // Education Section
     "edu-heading": "Освіта",
     "edu-degree": "Магістр з кібербезпеки",
     "edu-school": "Державний торговельно-економічний університет",
     "edu-date": "09/2020 – 12/2025",
-    "edu-thesis": "Тема магістерської роботи: 'Система виявлення кіберзагроз в інформаційній інфраструктурі торговельних підприємств' (Напрямки: OSINT, аналіз мережевого трафіку, тести на проникнення).",
+    "edu-thesis": "Спеціалізація: 'Система виявлення кіберзагроз інформаційної інфраструктури торговельного підприємства' (Ключові напрямки: OSINT, аналіз мережевого трафіку, тестування на проникнення).",
 
     // Certifications Section
-    "cert-heading": "Сертифікати",
+    "cert-heading": "Сертифікати та ліцензії",
     "cert-item1": "Cisco Cyber Threat Management (Квітень 2026)",
     "cert-item2": "Cisco Certified Network Associate Security (CCNA Security)",
-    "cert-item3": "Аудитор СУІБ ISO/IEC 27001 (ESKA / Укртелеком)",
+    "cert-item3": "Організація СУІБ за стандартом ISO/IEC 27001 (ESKA / АТ 'Укртелеком')",
     "cert-item4": "Cybersecurity Essentials",
+
+    // Languages Block
+    "lang-heading": "Мови",
+    "lang-ua": "Українська",
+    "lang-ua-level": "Рідна",
+    "lang-en": "Англійська",
+    "lang-de": "Німецька",
+    "lang-de-level": "A2 / B2 (Вивчається)",
 
     // Projects Section
     "projects-heading": "Обрані проєкти",
@@ -169,7 +185,7 @@ const translations = {
 
     "proj-thesis-title": "Оцінка точності систем виявлення загроз",
     "proj-thesis-desc": "Дипломна магістерська робота, присвячена оцінці та оптимізації точності виявлення загроз у корпоративних системах SIEM та IDS, включаючи метрики для мінімізації хибнопозитивних спрацьовувань.",
-    "proj-thesis-tags": "Кібербезпека • Аналіз загроз • SIEM • Корпоративна безпека",
+    "proj-thesis-tags": "Кібербезпека • Аналiз загроз • SIEM • Корпоративна безпека",
 
     // Resume / CV Hub
     "cv-heading": "Центр резюме",
@@ -242,7 +258,7 @@ const translations = {
     "exp-role2-date": "07/2023 – 11/2025",
     "exp-role2-bullet1": "Kommissarischer Teamleiter: Leitung einer Schicht von 6 SOC- und NOC-Analysten. Sicherstellung einer SLA-Konformität von 96 % bei kritischen Vorfällen (P1/P2) in einer nationalen Infrastruktur.",
     "exp-role2-bullet2": "Senior SOC Analyst: Entwicklung und Implementierung von 12+ neuen Bedrohungserkennungsszenarien (Use Cases) im SIEM (MS Sentinel, Arcsight), Reduzierung von False Positives um 28 %.",
-    "exp-role2-bullet3": "SOC Analyst: Analyse von über 80 Sicherheitswarnungen täglich. Komplette Überarbeitung von 15 Playbooks, was die Reaktionszeit (MTTR) um 56 % verkürzte.",
+    "exp-role2-bullet3": "SOC Analyst: Analyse von über 80 Sicherheitswarnungen täglich. Komplette Überarbeitung von 15 Playbooks, was die Reaktionszeit (MTTR) um 56 % (auf 7 Minuten) verkürzte.",
 
     // Education Section
     "edu-heading": "Ausbildung",
@@ -252,11 +268,19 @@ const translations = {
     "edu-thesis": "Thema der Masterarbeit: 'System zur Erkennung von Cyberbedrohungen in der Informationsinfrastruktur von Handelsunternehmen' (Schwerpunkte: OSINT, Netzwerkverkehrsanalyse, Penetrationstests).",
 
     // Certifications Section
-    "cert-heading": "Zertifizierungen",
+    "cert-heading": "Zertifizierungen & Lizenzen",
     "cert-item1": "Cisco Cyber Threat Management (April 2026)",
     "cert-item2": "Cisco Certified Network Associate Security (CCNA Security)",
-    "cert-item3": "ISMS-Organisation nach ISO/IEC 27001 (ESKA / Ukrtelecom)",
+    "cert-item3": "ISMS-Organisation nach ISO/IEC 27001 (ESKA / JSC 'Ukrtelecom')",
     "cert-item4": "Cybersecurity Essentials",
+
+    // Languages Block
+    "lang-heading": "Sprachen",
+    "lang-ua": "Ukrainisch",
+    "lang-ua-level": "Muttersprache",
+    "lang-en": "Englisch",
+    "lang-de": "Deutsch",
+    "lang-de-level": "A2 / B2 (In Ausbildung)",
 
     // Projects Section
     "projects-heading": "Ausgewählte Projekte",
@@ -293,7 +317,7 @@ const translations = {
     "contact-error": "Etwas ist schiefgelaufen. Bitte überprüfen Sie Ihre Eingaben.",
 
     // Footer
-    "footer-copyright": "© 2026 Vadym Vatskovskyi. Alle Rechte vorbehalten.",
+    "footer-copyright": "© 2026 Vadym Vatskovskyi. All rights reserved.",
     "footer-disclaimer": "Entworfen in einem modernen, kontrastreichen Dark-Theme."
   }
 };
