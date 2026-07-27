@@ -86,8 +86,8 @@ const translations = {
     "cv-card-title": "Ready for Review",
     "cv-card-desc": "Get a detailed overview of my experience, technical stack, and education. Select a version to download the PDF document.",
     "cv-btn-en": "Download CV (English)",
-    "cv-btn-uk": "Завантажити резюме (Українська)",
-    "cv-btn-de": "Lebenslauf herunterladen (Deutsch)",
+    "cv-btn-uk": "Download CV (Ukrainian)",
+    "cv-btn-de": "Download CV (German)",
 
     // Contact Section
     "contact-heading": "Contact Me",
@@ -192,9 +192,9 @@ const translations = {
     "cv-subheading": "Завантажте моє професійне портфоліо та резюме зручною для вас мовою.",
     "cv-card-title": "Готово до перегляду",
     "cv-card-desc": "Отримайте детальний огляд мого досвіду, технологічного стеку та освіти. Виберіть версію для завантаження PDF-документа.",
-    "cv-btn-en": "Download CV (Англійська)",
+    "cv-btn-en": "Завантажити резюме (Англійська)",
     "cv-btn-uk": "Завантажити резюме (Українська)",
-    "cv-btn-de": "Lebenslauf herunterladen (Німецька)",
+    "cv-btn-de": "Завантажити резюме (Німецька)",
 
     // Contact Section
     "contact-heading": "Написати мені",
@@ -299,8 +299,8 @@ const translations = {
     "cv-subheading": "Laden Sie mein Profil und meinen Lebenslauf in Ihrer bevorzugten Sprache herunter.",
     "cv-card-title": "Bereit zur Prüfung",
     "cv-card-desc": "Erhalten Sie einen detaillierten Überblick über meine Erfahrungen, meinen Tech Stack und meine Ausbildung. Wählen Sie eine Version zum Herunterladen des PDF-Dokuments aus.",
-    "cv-btn-en": "Download CV (Englisch)",
-    "cv-btn-uk": "Завантажити резюме (Ukrainisch)",
+    "cv-btn-en": "Lebenslauf herunterladen (Englisch)",
+    "cv-btn-uk": "Lebenslauf herunterladen (Ukrainisch)",
     "cv-btn-de": "Lebenslauf herunterladen (Deutsch)",
 
     // Contact Section

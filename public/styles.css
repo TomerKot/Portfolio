@@ -1007,6 +1007,7 @@ img, svg {
   height: 20px;
   fill: currentColor;
   transition: transform var(--transition-fast);
+  flex-shrink: 0;
 }
 
 /* Target CV highlight states */
