@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Vadym Vatskovskyi | Senior SOC Analyst & System Administrator</title>
+  <meta name="description" content="Portfolio of Vadym Vatskovskyi, Senior SOC Analyst, System Administrator, and Cybersecurity Specialist based in Germany. Focused on threat detection, virtualization, and security operations.">
+  <meta name="author" content="Vadym Vatskovskyi">
+  
+  <!-- Prevent FOUC and force Dark Mode background -->
+  <script>
+    document.documentElement.style.backgroundColor = '#04060a';
+  </script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Translation dictionary and main application script -->
+  <script src="translations.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- --- Sticky Header & Navigation --- -->
+  <header id="header" class="header">
+    <div class="container">
+      <!-- Brand Logo / Terminal Emblem -->
+      <a href="#hero" class="logo" id="logo-link">
+        <span class="logo-terminal" aria-hidden="true">&gt;_</span>
+        <span>VV.SEC</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav id="nav" class="nav" aria-label="Main Navigation">
+        <ul class="nav-list" id="nav-list-items">
+          <li><a href="#about" class="nav-link active" id="nav-link-about" data-i18n="nav-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills" data-i18n="nav-skills">Skills</a></li>
+          <li><a href="#experience" class="nav-link" id="nav-link-exp" data-i18n="nav-experience">Experience</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-proj" data-i18n="nav-projects">Projects</a></li>
+          <li><a href="#cv-hub" class="nav-link" id="nav-link-cv" data-i18n="nav-cv-hub">Resume Hub</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+
+        <!-- Language Switcher (Header Desktop / Slide-out Menu Mobile) -->
+        <div class="lang-switcher" id="lang-switcher-controls" role="group" aria-label="Language Selector">
+          <button class="lang-btn active" data-lang="en" id="lang-btn-en" aria-selected="true">EN</button>
+          <button class="lang-btn" data-lang="uk" id="lang-btn-uk" aria-selected="false">UK</button>
+          <button class="lang-btn" data-lang="de" id="lang-btn-de" aria-selected="false">DE</button>
+        </div>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- --- Hero / About Section --- -->
+    <section id="about" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Content Panel -->
+          <div class="hero-content">
+            
+            <!-- Availability Badge -->
+            <div class="status-indicator" id="status-badge-container">
+              <span class="status-dot"></span>
+              <span data-i18n="status-badge">Available for new opportunities • §24 AufenthG</span>
+            </div>
+
+            <span class="hero-title-prefix" data-i18n="hero-greeting">Hi, I am</span>
+            
+            <!-- Core Heading (SEO Target) -->
+            <h1 class="hero-name" id="main-heading" data-i18n="hero-name">Vadym Vatskovskyi</h1>
+            
+            <p class="hero-tagline" id="hero-title-desc" data-i18n="hero-title">
+              Senior SOC Analyst | System Administrator | Cybersecurity Specialist
+            </p>
+            
+            <p class="hero-desc" id="hero-intro-text" data-i18n="hero-intro">
+              Cybersecurity & IT Specialist currently based in Kassel, Germany. Extensive experience in Security Operations Centers (SOC) - from analyst to senior specialist and acting team leader. Focused on network monitoring, threat detection, virtualization, and automation. Residence status: §24 AufenthG (unrestricted work permit).
+            </p>
+            
+            <div class="hero-ctas">
+              <a href="#cv-hub" class="btn btn-primary" id="hero-btn-cv" data-i18n="hero-cta-cv">Go to Resume Hub</a>
+              <a href="#contact" class="btn btn-secondary" id="hero-btn-contact" data-i18n="hero-cta-contact">Get in Touch</a>
+            </div>
+          </div>
+
+          <!-- Cybersecurity Radar Panel -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="cyber-panel">
+              <div class="cyber-panel-header">
+                <div class="panel-dots">
+                  <span class="panel-dot red"></span>
+                  <span class="panel-dot yellow"></span>
+                  <span class="panel-dot green"></span>
+                </div>
+                <div class="panel-title">NOC/SOC Threat Monitor</div>
+              </div>
+              
+              <div class="cyber-radar-container">
+                <div class="radar">
+                  <div class="radar-crosshair-h"></div>
+                  <div class="radar-crosshair-v"></div>
+                  <div class="radar-grid-1"></div>
+                  <div class="radar-grid-2"></div>
+                  <div class="radar-sweep"></div>
+                  <div class="radar-ping radar-ping-1"></div>
+                  <div class="radar-ping radar-ping-2"></div>
+                  <div class="radar-ping radar-ping-3"></div>
+                </div>
+              </div>
+
+              <div class="panel-footer-stats">
+                <div class="panel-stat-item">
+                  <span>LOC:</span>
+                  <span data-i18n="status-location">Kassel, Germany</span>
+                </div>
+                <div class="panel-stat-item">
+                  <span>STATUS:</span>
+                  <span style="color: var(--color-green)">SECURE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Skills Section --- -->
+    <section id="skills" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-scroll reveal-observed">
+          <h2 class="section-title" id="skills-title" data-i18n="skills-heading">Skills & Tech Stack</h2>
+          <p class="section-subtitle" id="skills-sub" data-i18n="skills-subheading">
+            Core technical areas and toolsets. Built on defense-in-depth principles.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category: Security Operations -->
+          <div class="skill-card reveal-scroll reveal-observed">
+            <div class="skill-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title" data-i18n="skill-cat-security">Security Operations</h3>
+            <div class="skill-badges">
+              <span class="skill-badge highlight">MS Sentinel</span>
+              <span class="skill-badge highlight">Arcsight</span>
+              <span class="skill-badge">Threat Detection</span>
+              <span class="skill-badge">Incident Response</span>
+              <span class="skill-badge">Vulnerability Assessment</span>
+              <span class="skill-badge">OWASP Top 10</span>
+              <span class="skill-badge">Endpoint Security</span>
+            </div>
+          </div>
+
+          <!-- Category: Network Analysis -->
+          <div class="skill-card reveal-scroll reveal-observed">
+            <div class="skill-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 12h8"/>
+                <path d="M12 8v8"/>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title" data-i18n="skill-cat-analysis">Network Analysis & Tools</h3>
+            <div class="skill-badges">
+              <span class="skill-badge highlight">Wireshark</span>
+              <span class="skill-badge highlight">SolarWinds</span>
+              <span class="skill-badge">TCP/IP Protocols</span>
+              <span class="skill-badge">VLAN / LAN / WLAN</span>
+              <span class="skill-badge">Routing & Switching</span>
+              <span class="skill-badge">Firewalls & VPNs</span>
+            </div>
+          </div>
+
+          <!-- Category: Virtualization & SysAdmin -->
+          <div class="skill-card reveal-scroll reveal-observed">
+            <div class="skill-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title" data-i18n="skill-cat-infrastructure">Systems & Virtualization</h3>
+            <div class="skill-badges">
+              <span class="skill-badge highlight">VMware vSphere</span>
+              <span class="skill-badge highlight">Proxmox</span>
+              <span class="skill-badge highlight">VMware Horizon</span>
+              <span class="skill-badge">Active Directory</span>
+              <span class="skill-badge">MS Azure & O365 Admin</span>
+              <span class="skill-badge">DNS / DHCP / GPOs</span>
+              <span class="skill-badge">Windows Server & Linux</span>
+            </div>
+          </div>
+
+          <!-- Category: Automation & Dev -->
+          <div class="skill-card reveal-scroll reveal-observed">
+            <div class="skill-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3 class="skill-cat-title" data-i18n="skill-cat-automation">Automation & Programming</h3>
+            <div class="skill-badges">
+              <span class="skill-badge highlight">Python</span>
+              <span class="skill-badge highlight">PowerShell</span>
+              <span class="skill-badge">aiogram</span>
+              <span class="skill-badge">Telethon</span>
+              <span class="skill-badge">Bash Scripting</span>
+              <span class="skill-badge">API Integrations</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Experience & Education Section --- -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="timeline-section-grid">
+          
+          <!-- Column: Professional Experience (Reverse Chronological Order) -->
+          <div class="reveal-scroll reveal-observed">
+            <div class="section-header" style="text-align: left; margin-bottom: 40px; margin-left: 0;">
+              <h2 class="section-title" style="display: block;" id="experience-title" data-i18n="exp-heading">Professional Experience</h2>
+              <p class="section-subtitle" id="experience-sub" data-i18n="exp-subheading">NOC/SOC operations, system administration, and infrastructure monitoring.</p>
+            </div>
+
+            <div class="timeline">
+              <!-- Job 1: System Administrator NDA -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-meta">
+                    <h3 class="timeline-role" data-i18n="exp-role1-title">System Administrator</h3>
+                    <span class="timeline-date" data-i18n="exp-role1-date">11/2025 – 05/2026</span>
+                  </div>
+                  <div class="timeline-company" data-i18n="exp-role1-company">IT Company (NDA) - Kyiv, Ukraine</div>
+                  <ul class="timeline-bullets">
+                    <li data-i18n="exp-role1-bullet1">Administrated and maintained server infrastructure (Windows/Linux) and local networks.</li>
+                    <li data-i18n="exp-role1-bullet2">Managed virtualization and remote tools (Proxmox, VMware Horizon, vSphere, VMware).</li>
+                    <li data-i18n="exp-role1-bullet3">Configured VPNs, firewalls, VLANs, routing, switching, and group policies (GPOs). Managed backup, recovery, and hardware maintenance.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Job 2: Ukrtelecom -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-meta">
+                    <h3 class="timeline-role" data-i18n="exp-role2-title">Acting Team Leader SOC / Senior SOC Analyst</h3>
+                    <span class="timeline-date" data-i18n="exp-role2-date">07/2023 – 11/2025</span>
+                  </div>
+                  <div class="timeline-company" data-i18n="exp-role2-company">JSC 'Ukrtelecom' - Kyiv, Ukraine</div>
+                  <ul class="timeline-bullets">
+                    <li data-i18n="exp-role2-bullet1">Acting Team Leader: Managed a shift of 6 SOC/NOC analysts. Maintained 96% SLA compliance for critical incidents (P1/P2) on national infrastructure.</li>
+                    <li data-i18n="exp-role2-bullet2">Senior SOC Analyst: Developed and implemented 12+ custom SIEM detection use cases (MS Sentinel, Arcsight), reducing false positives by 28%.</li>
+                    <li data-i18n="exp-role2-bullet3">SOC Analyst: Monitored 80+ daily alerts. Completely refactored 15 playbooks, reducing Mean Time to Respond (MTTR) by 56%.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column: Education & Certifications -->
+          <div class="reveal-scroll reveal-observed">
+            
+            <!-- Education Block -->
+            <div class="section-header" style="text-align: left; margin-bottom: 40px; margin-left: 0;">
+              <h2 class="section-title" style="display: block;" id="education-title" data-i18n="edu-heading">Education</h2>
+            </div>
+            
+            <div class="education-cards">
+              <div class="education-card">
+                <h3 class="edu-school" data-i18n="edu-school">State University of Trade and Economics</h3>
+                <p class="edu-degree" data-i18n="edu-degree">Master of Science in Cybersecurity</p>
+                <p class="timeline-company" data-i18n="edu-thesis" style="font-size: 0.9rem; margin-top: 10px; margin-bottom: 12px; font-weight: normal; color: var(--text-secondary);">
+                  Thesis: "Cyber Threat Detection System in Commercial Enterprise Infrastructure" (Focus on OSINT, network traffic analysis, and penetration testing).
+                </p>
+                <div class="edu-meta">
+                  <span data-i18n="edu-date">09/2020 – 12/2025</span>
+                  <span>Kyiv, Ukraine</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certifications Block (Visually balances layout) -->
+            <div class="section-header" style="text-align: left; margin-top: 50px; margin-bottom: 30px; margin-left: 0;">
+              <h2 class="section-title" style="display: block; font-size: 1.8rem;" id="certifications-heading-sec" data-i18n="cert-heading">Certifications</h2>
+            </div>
+
+            <div class="education-card">
+              <ul class="timeline-bullets" style="margin-bottom: 0;">
+                <li data-i18n="cert-item1">Cisco Cyber Threat Management (April 2026)</li>
+                <li data-i18n="cert-item2">Cisco Certified Network Associate Security (CCNA Security)</li>
+                <li data-i18n="cert-item3">ISMS Auditor ISO/IEC 27001 (ESKA / Ukrtelecom)</li>
+                <li data-i18n="cert-item4">Cybersecurity Essentials</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Projects Section --- -->
+    <section id="projects" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-scroll reveal-observed">
+          <h2 class="section-title" id="projects-title" data-i18n="projects-heading">Featured Projects</h2>
+          <p class="section-subtitle" id="projects-sub" data-i18n="projects-subheading">Security automation scripts and academic work.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Telegram Bots -->
+          <article class="project-card reveal-scroll reveal-observed">
+            <div class="project-media">
+              <div class="project-visual-icon" aria-hidden="true">&gt;_ BOT</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj-bot-title">Python Telegram Bots</h3>
+              <p class="project-desc" data-i18n="proj-bot-desc">
+                Developed custom Telegram bots using aiogram and Telethon for network infrastructure alerts, system status logging, and channel management automation.
+              </p>
+              <span class="project-tags" data-i18n="proj-bot-tags">Python • aiogram • Telethon • APIs</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Diploma Thesis -->
+          <article class="project-card reveal-scroll reveal-observed">
+            <div class="project-media">
+              <div class="project-visual-icon" aria-hidden="true">SEC.SHIELD</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj-thesis-title">Threat Detection Accuracy</h3>
+              <p class="project-desc" data-i18n="proj-thesis-desc">
+                Master's thesis focusing on assessing and optimizing the threat detection accuracy of enterprise SIEM and IDS systems, including metrics for reducing false positives.
+              </p>
+              <span class="project-tags" data-i18n="proj-thesis-tags">Cybersecurity • Threat Analysis • SIEM • Enterprise Security</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Resume / CV Hub Section (Primary Goal) --- -->
+    <section id="cv-hub" class="section cv-hub">
+      <div class="container">
+        <div class="cv-hub-card reveal-scroll reveal-observed">
+          
+          <h2 class="cv-hub-title" id="cv-main-title" data-i18n="cv-heading">Resume / CV Hub</h2>
+          
+          <p class="cv-hub-desc" id="cv-main-desc" data-i18n="cv-card-desc">
+            Get a detailed overview of my experience, technical stack, and education. Select a version to download the PDF document.
+          </p>
+
+          <!-- High-Visibility Download CTAs Grid -->
+          <div class="cv-buttons-grid">
+            
+            <!-- CV English -->
+            <a href="assets/cv-en.pdf" download="Vadym_Vatskovskyi_CV_EN.pdf" class="cv-btn" id="cv-download-en">
+              <!-- SVG PDF Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+              </svg>
+              <span data-i18n="cv-btn-en">Download CV (English)</span>
+            </a>
+
+            <!-- CV Ukrainian -->
+            <a href="assets/cv-uk.pdf" download="Vadym_Vatskovskyi_CV_UA.pdf" class="cv-btn" id="cv-download-uk">
+              <!-- SVG PDF Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+              </svg>
+              <span data-i18n="cv-btn-uk">Завантажити резюме (Українська)</span>
+            </a>
+
+            <!-- CV German -->
+            <a href="assets/cv-de.pdf" download="Vadym_Vatskovskyi_Lebenslauf_DE.pdf" class="cv-btn" id="cv-download-de">
+              <!-- SVG PDF Icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+              </svg>
+              <span data-i18n="cv-btn-de">Lebenslauf herunterladen (Deutsch)</span>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Contact Section --- -->
+    <section id="contact" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-scroll reveal-observed">
+          <h2 class="section-title" id="contact-title" data-i18n="contact-heading">Contact Me</h2>
+          <p class="section-subtitle" id="contact-sub" data-i18n="contact-subheading">
+            Interested in working together or have any questions? Send me a message.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info & Socials -->
+          <div class="contact-info reveal-scroll reveal-observed">
+            <div>
+              <h3 class="contact-info-title" data-i18n="hero-name">Vadym Vatskovskyi</h3>
+              <p class="contact-info-desc" data-i18n="hero-title">Senior SOC Analyst | System Administrator | Cybersecurity Specialist</p>
+            </div>
+            
+            <div class="contact-details">
+              <!-- Detail: Kassel Germany Location -->
+              <div class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span data-i18n="status-location">Kassel, Germany</span>
+                </div>
+              </div>
+
+              <!-- Detail: Email -->
+              <div class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <a href="mailto:vavats274@gmail.com" id="contact-email-link">vavats274@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Detail: Phone -->
+              <div class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <a href="tel:+4915510493796" id="contact-phone-link">+49 1551 0493796</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="contact-socials">
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/vadim-vatskovskyi" class="social-link" id="social-linkedin" aria-label="LinkedIn Profile" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+              <!-- Instagram/Portfolio reference link -->
+              <a href="https://instagram.com/tomerkot/" class="social-link" id="social-instagram" aria-label="Instagram Profile" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+
+              <!-- Email Link -->
+              <a href="mailto:vavats274@gmail.com" class="social-link" id="social-email" aria-label="Send direct email">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-container reveal-scroll reveal-observed">
+            <div class="form-message" id="form-message" role="alert"></div>
+
+            <form id="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="form-name" class="form-label" data-i18n="contact-name-label">Full Name</label>
+                <input type="text" id="form-name" class="form-input" data-i18n-placeholder="contact-name-placeholder" required autocomplete="name">
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="form-email" class="form-label" data-i18n="contact-email-label">Email Address</label>
+                <input type="email" id="form-email" class="form-input" data-i18n-placeholder="contact-email-placeholder" required autocomplete="email">
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="form-message-text" class="form-label" data-i18n="contact-msg-label">Message</label>
+                <textarea id="form-message-text" class="form-input" data-i18n-placeholder="contact-msg-placeholder" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%; justify-content: center;">
+                <span data-i18n="contact-submit">Send Message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p data-i18n="footer-copyright">© 2026 Vadym Vatskovskyi. All rights reserved.</p>
+        <p class="footer-disclaimer" data-i18n="footer-disclaimer">Designed with a modern, high-contrast dark theme.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
